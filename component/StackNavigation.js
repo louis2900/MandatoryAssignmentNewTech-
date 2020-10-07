@@ -3,15 +3,15 @@ import AnimalsPhoto from "./NavigationComponents/AnimalsPhoto";
 
 
 
-/*Her har vi stack navigationen*/
+/*Dette er den ene af vores stack navigatorer*/
 const PhotoStack = createStackNavigator({
-        /*Fra venstre er det side navnet og screen er vores View / component*/
+        /*Her bestemmer vi hvilket view som skal vises */
         AnimalsImagery: { screen: AnimalsPhoto },
 
 
     },
     {
-        /*Hvilket View skal starte*/
+        /*Hvilket View skal starte hvis vi havde haft flere views*/
         initialRouteName:'AnimalsImagery',
         navigationOptions:{
             title:'Animal'

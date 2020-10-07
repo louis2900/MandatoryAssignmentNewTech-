@@ -3,15 +3,15 @@ import AnimalFriends from "./NavigationComponents/AnimalFriends";
 
 
 
-/*Her har vi stack navigationen*/
+/*Dette er den ene af vores stack navigatorer*/
 const SocialStack = createStackNavigator({
-        /*Fra venstre er det side navnet og screen er vores View / component*/
+        /*Her bestemmer vi hvilket view som skal vises */
         Social: { screen: AnimalFriends },
 
 
     },
     {
-        /*Hvilket View skal starte*/
+        /*Hvilket View skal starte hvis vi havde haft flere views*/
         initialRouteName:'Social',
         navigationOptions:{
             title:'Main'

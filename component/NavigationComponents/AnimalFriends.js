@@ -10,11 +10,11 @@ import {
 import Constants from 'expo-constants';
 import UserItem from "../Api/UserItem";
 
-
+// denne URl siger at vi skal hente 10 users
 const USERS_URL = 'https://randomuser.me/api?results=10';
 
 export default class animalFriends extends React.Component {
-
+// Så sætter vi tre state til null.
     state = {
         animalUsers: null,
         isLoading: false,
@@ -64,7 +64,7 @@ export default class animalFriends extends React.Component {
             <View style={styles.container}>
 
                 {isLoading && <ActivityIndicator />}
-
+                {/*vi har lavet en flatlist som viser vores useritems som et unikt key*/}
                 {animalUsers && (
                     <FlatList
                         data={animalUsers}
